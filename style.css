@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background-color: green;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #88ff00;
+    font-size: 80px;
+}
+
+.subtitulo {
+    font-family: 'Press Start 2P', cursive;
+    color: #88ff00;
+    font-size: 32px;
+}
+
+/* SECCIONES */
+h2 {
+    color: #00ffcc;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.contenido {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* BOTÓN CANAL */
+.boton-canal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    margin: 30px auto; /* 🔥 centra el botón */
+    padding: 22px 32px;
+
+    background: #ff0000;
+    color: white;
+    text-decoration: none;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px; /* más grande */
+
+    border-radius: 12px;
+    box-shadow: 0 0 20px #ff0000;
+
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.boton-canal:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 30px #ff4444;
+}
+
+.icono-canal {
+    width: 64px;  /* ícono más grande */
+    height: 64px;
+    image-rendering: pixelated;
+}
+
+
+/* DONACIONES */
+.donar {
+    text-align: center;
+    padding: 30px;
+    background-color: #1a1a1a;
+}
+
+.paypal-btn {
+    background-color: #0070ba;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.paypal-btn:hover {
+    background-color: #003087;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1f1f1f;
+    font-size: 14px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* BOTÓN BASE */
+.boton-red {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+
+    padding: 14px 20px;
+    width: fit-content;
+
+    font-family: 'Press Start 2P', cursive;
+    font-size: 13px;
+
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+
+    box-shadow: 0 0 12px rgba(255,255,255,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.boton-red:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+
+.boton-red img {
+    width: 36px;
+    height: 36px;
+    image-rendering: pixelated;
+}
+
+/* COLORES POR RED */
+.youtube {
+    background: #ff0000;
+}
+
+.tiktok {
+    background: linear-gradient(135deg, #00f2ea, #ff0050);
+}
+
+.x {
+    background: #000000;
+}
+
+.instagram {
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+}
+
+.kofi {
+    background: #29abe0;
+}
+
+/* CONTENEDOR REDES PRINCIPALES */
+.redes-principales {
+    display: flex;
+    justify-content: center; /* 🔥 CENTRADO REAL */
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+/* CONTENEDOR KOFI */
+.redes-kofi {
+    display: flex;
+    justify-content: center;
+}
+
+/* =========================
+   RESPONSIVE - MÓVILES
+========================= */
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 36px; /* antes 80px */
+    }
+
+    .subtitulo {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .contenido {
+        padding: 15px;
+    }
+
+    /* BOTÓN CANAL */
+    .boton-canal {
+        flex-direction: column;
+        font-size: 14px;
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .icono-canal {
+        width: 56px;
+        height: 56px;
+    }
+
+    /* REDES SOCIALES */
+    .redes-principales {
+        flex-direction: column; /* 🔥 se apilan */
+        align-items: center;
+        gap: 16px;
+    }
+
+    .boton-red {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    .boton-red span {
+        text-align: center;
+    }
+
+    /* DONACIONES */
+    .paypal-btn {
+        font-size: 12px;
+        padding: 12px 18px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
