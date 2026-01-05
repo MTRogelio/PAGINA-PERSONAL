@@ -339,3 +339,55 @@ footer {
 .about-text {
     text-align: left;
 }
+
+/* =========================
+   SHORTS (SIN IFRAME)
+========================= */
+
+.shorts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    margin-top: 25px;
+}
+
+.short-card {
+    position: relative;
+    max-width: 220px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.45);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.short-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px rgba(255, 0, 0, 0.8);
+}
+
+.short-card img {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    display: block;
+}
+
+/* Botón play */
+.short-card span {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: white;
+    background: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.short-card:hover span {
+    opacity: 1;
+}
+
