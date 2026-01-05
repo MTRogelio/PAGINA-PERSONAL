@@ -391,3 +391,24 @@ footer {
     opacity: 1;
 }
 
+.short-title {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+.separador {
+    width: 70%;
+    height: 2px;
+    margin: 50px auto;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #00ffcc,
+        transparent
+    );
+    opacity: 0.6;
+}
