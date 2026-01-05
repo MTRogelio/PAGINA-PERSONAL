@@ -279,6 +279,13 @@ footer {
     color: #00ffcc;
 }
 
+@media (max-width: 768px) {
+    .about-text {
+        text-align: center;
+    }
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .about-grid {
@@ -329,6 +336,3 @@ footer {
     color: #00ffcc;
 }
 
-.about-text {
-    text-align: left;
-}
