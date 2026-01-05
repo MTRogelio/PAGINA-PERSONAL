@@ -281,7 +281,7 @@ footer {
 
 @media (max-width: 768px) {
     .about-text {
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -336,3 +336,6 @@ footer {
     color: #00ffcc;
 }
 
+.about-text {
+    text-align: left;
+}
